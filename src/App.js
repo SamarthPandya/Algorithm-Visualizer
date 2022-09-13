@@ -184,7 +184,7 @@ function App(props) {
                 setDelay(event.target.valueAsNumber);
               }}
             />
-            <p>Delay = {delay * 10}x</p>
+            <p id="delay">{delay * 10}x</p>
             {StopWatch()}
           </form>
         </div>

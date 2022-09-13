@@ -2,8 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*background-color: rgba(214, 201, 201, 0.601);*/
-  background-color: black;
+  font-size: 10pt;
+  background-color: rgba(214, 201, 201, 0.601);
+}
+#delay {
+  background-color: #17b9a9;
+  padding: 2%;
+  border-radius: 4px;
 }
 .app {
   display: flex;
@@ -24,11 +29,11 @@ form {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  column-gap: 30px;
+  column-gap: 6%;
   border: none;
   outline: none;
   border-radius: 10px;
-  padding: 4px;
+  padding: 1%;
 }
 .block {
   align-items: flex-start;
@@ -40,18 +45,18 @@ form {
 }
 #generate,
 #go {
-  padding: 4px;
+  padding: 0.5%;
   border-radius: 5px;
   justify-content: center;
   position: relative;
   text-align: center;
   margin: auto;
-  width: 100px;
+  width: 150%;
 }
 .block_id {
   position: absolute;
   color: black;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   display: none;
   width: 100%;
   text-align: center;
@@ -60,7 +65,7 @@ form {
 }
 select,
 input {
-  padding: 4px;
+  padding: 0.5%;
   border-radius: 5px;
   border: solid black 1px;
 }
@@ -72,7 +77,7 @@ select {
   display: grid;
   grid-template-columns: repeat(50, 23fr);
   background-color: rgb(228, 170, 104);
-  width: 1000px;
+  width: 100%;
   height: 460px;
   margin-top: 50px;
 }
