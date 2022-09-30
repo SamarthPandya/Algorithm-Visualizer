@@ -202,7 +202,7 @@ function App(props) {
         } else if (algo == 2) {
           await BubbleSort(dels[delay - 1]);
         } else if (algo == 3) {
-          await selectionSort();
+          await selectionSort(dels[delay - 1]);
         } else if (algo == 4) {
           await heapSort(size, dels[delay - 1]);
         } else if (algo == 5) {

@@ -122,7 +122,7 @@ async function altt(low, high, delay) {
   }
   i = i + 1;
   for (var m = high; m > i; m--) {
-    await swap(blocks[m - 1], blocks[m]);
+    await swap(blocks[m - 1], blocks[m], delay);
     blocks = document.querySelectorAll(".block");
   }
   someFunction1();
