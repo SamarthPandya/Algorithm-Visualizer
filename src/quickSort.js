@@ -88,6 +88,7 @@ async function alt(low, high) {
 }
 var count = 0;
 var count1 = 0;
+var count2 = 0;
 async function altt(low, high, delay) {
   function someFunction() {
     document.getElementById("swaps").innerHTML = ++count;
@@ -95,7 +96,11 @@ async function altt(low, high, delay) {
   }
   function someFunction1() {
     document.getElementById("mem").innerHTML = ++count1;
-    console.log(count);
+    console.log(count1);
+  }
+  function someFunction2() {
+    document.getElementById("comps").innerHTML = ++count2;
+    console.log(count2);
   }
   var blocks = document.querySelectorAll(".block");
   for (var m = low; m <= high; m++) {
@@ -108,13 +113,14 @@ async function altt(low, high, delay) {
   var j = low;
   while (j < high) {
     someFunction1();
+    someFunction2();
+    someFunction2();
     if (Number(blocks[j].childNodes[0].innerHTML) <= pivot) {
       i = i + 1;
       for (var m = j; m > i; m--) {
         await swap(blocks[m - 1], blocks[m], delay);
         blocks = document.querySelectorAll(".block");
       }
-
       someFunction();
       someFunction1();
     }
@@ -138,7 +144,9 @@ async function quickSort(low, high, delay) {
   if (low == 0 && high == blocks.length - 1) {
     count = 0;
     count1 = 0;
+    count2 = 0;
   }
+  ++count2;
   if (low <= high) {
     //let pi = await partition(low, high, 1);
     let pi = await altt(low, high, delay);

@@ -89,6 +89,7 @@ function App(props) {
         document.getElementById("range").disabled = false;
         document.getElementById("swaps").innerHTML = 0;
         document.getElementById("mem").innerHTML = 0;
+        document.getElementById("comps").innerHTML = 0;
         /*var container = document.getElementById("console");
       for (var i = 0; i < size; i++) {
         // Return a value from 1 to 100 (both inclusive)

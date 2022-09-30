@@ -30,11 +30,19 @@ async function BubbleSort(delay) {
     document.getElementById("mem").innerHTML = ++count1;
     console.log(count);
   }
+
+  var count2 = 0;
+  function someFunction2() {
+    document.getElementById("comps").innerHTML = ++count2;
+    console.log(count2);
+  }
   var blocks = document.querySelectorAll(".block");
 
   // BubbleSort Algorithm
   for (var i = 0; i < blocks.length; i += 1) {
+    someFunction2();
     for (var j = 0; j < blocks.length - i - 1; j += 1) {
+      someFunction2();
       // To change background-color of the
       // blocks to be compared
       blocks[j].style.backgroundColor = "#FF4949";
@@ -52,7 +60,7 @@ async function BubbleSort(delay) {
       var value2 = Number(blocks[j + 1].childNodes[0].innerHTML);
       someFunction1();
       someFunction1();
-
+      someFunction2();
       // To compare value of two blocks
       if (value1 > value2) {
         await swap(blocks[j], blocks[j + 1], delay);

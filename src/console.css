@@ -8,7 +8,8 @@
   height: 80vh;
 }
 
-.swaps {
+.swaps,
+.comps {
   display: flex;
   flex-direction: column;
   background-color: inherit;
@@ -17,12 +18,14 @@
   border-radius: 100px;
   justify-content: center;
 }
-.swapLabel {
+.swapLabel,
+.compsLabel {
   background-color: #b8bdb5;
   width: 100%;
   text-align: center;
 }
-.swapCount {
+.swapCount,
+.compsCount {
   background-color: #b8bdb5;
   width: 100%;
   text-align: center;
@@ -53,7 +56,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 80px;
   background-color: #847577;
 }
 .console {

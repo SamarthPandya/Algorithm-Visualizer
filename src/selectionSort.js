@@ -27,12 +27,19 @@ async function selectionSort(delay) {
     document.getElementById("mem").innerHTML = ++count1;
     console.log(count);
   }
+  var count2 = 0;
+  function someFunction2() {
+    document.getElementById("comps").innerHTML = ++count2;
+    console.log(count2);
+  }
   var blocks = document.querySelectorAll(".block");
   for (var i = 0; i < blocks.length; i++) {
+    someFunction2();
     var minInd = blocks.length - 1;
     for (var j = blocks.length - 2; j >= i; j--) {
       someFunction1();
       someFunction1();
+      someFunction2();
       if (
         Number(blocks[j].childNodes[0].innerHTML) <
         Number(blocks[minInd].childNodes[0].innerHTML)

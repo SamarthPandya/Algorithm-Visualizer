@@ -27,14 +27,22 @@ async function insertionSort(delay) {
     document.getElementById("swaps").innerHTML = ++count;
     console.log(count);
   }
+  var count2 = 0;
+  function someFunction2() {
+    document.getElementById("comps").innerHTML = ++count2;
+    console.log(count2);
+  }
   var blocks = document.querySelectorAll(".block");
   for (var i = 1; i < blocks.length; i += 1) {
+    someFunction2();
     var j = i;
     while (
       j > 0 &&
       Number(blocks[j].childNodes[0].innerHTML) <
         Number(blocks[j - 1].childNodes[0].innerHTML)
     ) {
+      someFunction2();
+      someFunction2();
       someFunction1();
       someFunction1();
       for (let m = i; m >= j; m--) {

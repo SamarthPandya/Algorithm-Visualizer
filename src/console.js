@@ -17,6 +17,12 @@ function Console() {
             0
           </div>
         </div>
+        <div className="comps">
+          <div className="compsLabel">Comparisons</div>
+          <div className="compsCount" id="comps">
+            0
+          </div>
+        </div>
       </div>
       <div className="console" id="console"></div>
     </div>

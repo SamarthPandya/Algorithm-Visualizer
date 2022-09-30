@@ -27,6 +27,11 @@ async function cocktailShakerSort(size, speed) {
     document.getElementById("mem").innerHTML = ++count1;
     console.log(count);
   }
+  var count2 = 0;
+  function someFunction2() {
+    document.getElementById("comps").innerHTML = ++count2;
+    console.log(count2);
+  }
   var blocks = document.querySelectorAll(".block");
   var left = 0;
   var right = size - 1;
@@ -36,6 +41,8 @@ async function cocktailShakerSort(size, speed) {
       for (var i = left; i < right; i++) {
         someFunction1();
         someFunction1();
+        someFunction2();
+        someFunction2();
         if (
           Number(blocks[i].childNodes[0].innerHTML) >
           Number(blocks[i + 1].childNodes[0].innerHTML)
@@ -54,6 +61,8 @@ async function cocktailShakerSort(size, speed) {
       for (var i = right; i > left; i--) {
         someFunction1();
         someFunction1();
+        someFunction2();
+        someFunction2();
         if (
           Number(blocks[i].childNodes[0].innerHTML) <
           Number(blocks[i - 1].childNodes[0].innerHTML)
