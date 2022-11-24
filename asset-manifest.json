@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Algorithm-Visualizer/static/css/main.9af4d829.css",
-    "main.js": "/Algorithm-Visualizer/static/js/main.c8b3db5c.js",
+    "main.css": "/Algorithm-Visualizer/static/css/main.6c390612.css",
+    "main.js": "/Algorithm-Visualizer/static/js/main.6c8c2059.js",
     "static/js/787.37ca354d.chunk.js": "/Algorithm-Visualizer/static/js/787.37ca354d.chunk.js",
     "index.html": "/Algorithm-Visualizer/index.html",
-    "main.9af4d829.css.map": "/Algorithm-Visualizer/static/css/main.9af4d829.css.map",
-    "main.c8b3db5c.js.map": "/Algorithm-Visualizer/static/js/main.c8b3db5c.js.map",
+    "main.6c390612.css.map": "/Algorithm-Visualizer/static/css/main.6c390612.css.map",
+    "main.6c8c2059.js.map": "/Algorithm-Visualizer/static/js/main.6c8c2059.js.map",
     "787.37ca354d.chunk.js.map": "/Algorithm-Visualizer/static/js/787.37ca354d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9af4d829.css",
-    "static/js/main.c8b3db5c.js"
+    "static/css/main.6c390612.css",
+    "static/js/main.6c8c2059.js"
   ]
 }
