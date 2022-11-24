@@ -131,6 +131,15 @@ function App(props) {
       return (
         <div className="preferences">
           <form className="preferences">
+            <div className="graphLink">
+              <a
+                href="https://rahul-sijwali.github.io/graph/"
+                target="_blank"
+                id="gLink"
+              >
+                Graph <br /> Visualizer
+              </a>
+            </div>
             <input
               placeholder="Size"
               id="size"

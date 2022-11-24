@@ -5,6 +5,23 @@
   font-size: 10pt;
   background-color: rgba(214, 201, 201, 0.601);
 }
+.graphLink {
+  position: absolute;
+  right: 860px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 57, 181);
+  border-radius: 10px;
+  padding: 1%;
+}
+#gLink {
+  background-color: rgb(8, 57, 181);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 #delay {
   background-color: #17b9a9;
   padding: 2%;
